@@ -1,28 +1,31 @@
-import React, { useState, } from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
+
+import { useOnClickOutside } from '../hooks/hooks'
+
 import { Burger } from '../lib/Burger'
 import { BurgerMenu } from './BurgerMenu'
-import logo from '../assets/logo.svg'
+import { ReactComponent as PentiaLogo } from '../assets/logo.svg'
 
-const StyledHeader = styled.header`
+const StyledNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
-  height: 100px;
-  background-color: #FBC4C4;
-`
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  height: 70px;
+  background-color: #1b1b1d;
 
-const LogoTitleContainer = styled.div`
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
-
-const Logo = styled.img`
-  height: 50px;
-  width: 50px;
-  margin-left: 20px;
+  @media (min-width: 768px){
+    flex-direction: column;
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
 `
 
 // const StyledLink = styled(Link)`
@@ -42,31 +45,32 @@ const Logo = styled.img`
 //   }
 // `
 
-const Title = styled.h1`
-  margin: 0 0 0 20px;
-  font-size: 30px;
-  @media (min-width: 768px){
-    font-size: 40px;
-  }
+const BurgerContainer = styled.div`
+  
 `
 
-const BurgerContainer = styled.div`
-  @media(min-width: 768px){
-    display: none;
-  }
+const StyledPentiaLogo = styled(PentiaLogo)`
+  height: 30px;
+  fill: #fff;
 `
+
+
+//svart färg 1b1b1d
 
 export const Menu = () => {
   const [open, setOpen] = useState(false)
+  const node = useRef()
+  const menuId = "main-menu";
+  useOnClickOutside(node, () => setOpen(false))
 
   return (
-    <header>
-      <Logo src={logo} alt='logo' />
-      <BurgerContainer>
-        <Burger open={open} setOpen={setOpen} />
-        <BurgerMenu open={open} setOpen={setOpen} />
+    <StyledNavbar>
+      <StyledPentiaLogo />
+      <BurgerContainer ref={node}>
+        <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+        <BurgerMenu open={open} setOpen={setOpen} id={menuId} />
       </BurgerContainer>
-    </header>
+    </StyledNavbar>
   )
 }
 

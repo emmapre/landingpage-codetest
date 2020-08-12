@@ -40,6 +40,7 @@ export const BurgerMenu = ({ open }) => {
 
   return (
     <StyledMenu open={open}>
+      <p>hejhejehej</p>
       {/* <Link to='/hero'>Hero</Link>
       <Link to='/info'>Info</Link>
       <Link to='/form'>Form</Link> */}
