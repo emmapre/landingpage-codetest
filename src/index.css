@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gotham';
-  src: local('Gotham'), ur;(./fonts/Gotham-Medium.otf) format('truetype');
+  src: local('Gotham'), url(./fonts/Gotham-Medium.otf) format('truetype');
 }
 
 body {

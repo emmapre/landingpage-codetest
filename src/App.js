@@ -9,20 +9,32 @@ import { InfoSection } from './components/InfoSection'
 import { FormSection } from './components/FormSection'
 
 
-const Container = styled.div
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  main {
+    margin:70px 0 0 0;
+  }
 
+  @media (min-width: 768px){
+    main {
+    margin:0 0 0 70px;
+  } }
+`
 
 
 export const App = () => {
   return (
     <div>
       <GlobalStyle />
-      <div>
+      <Container>
         <Menu />
+        <main>
         <HeroSection />
         <InfoSection />
         <FormSection />
-      </div>
+        </main>
+      </Container>
     </div>
   )
 }
