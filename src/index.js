@@ -4,6 +4,7 @@ import './index.css'
 import { App } from './App.js'
 import * as serviceWorker from './serviceWorker'
 
+import './fonts/Gotham-Ultra.otf'
 import './fonts/Gotham-Bold.otf'
 import './fonts/Gotham-Medium.otf'
 import './fonts/Gotham-Thin.otf'

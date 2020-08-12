@@ -4,7 +4,7 @@ import { Article } from '../lib/Article'
 
 export const InfoSection = () => {
   return (
-    <section>
+    <section id='infoSection'>
       <h2>Vi kan hjælpe dig med digital transformation på to fronter.</h2>
 
       {/* ARTICLE KOMPONENTER HÄR */}
