@@ -1,51 +1,48 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import illustration1 from '../assets/illustration1.svg'
 
 const StyledArticle = styled.article`
-  min-width: 64px;
-  min-height: 36px;
-  width: ${props => props.width};
+  min-width: 200px;
+  min-height: 150px;
+  width: ${props => props.width || '200px'};
   height: ${props => props.height};
   padding: 0 16px 0 16px;
-  border-radius: 3px;
-  background-color: ${props => props.background};
-  border: ${props => props.border};
+  margin: 0;
+  border: ${props => props.border || 'none'};
   color: 
     ${props => props.color || '#000'};
-  margin: 20px;
-  font-family: ${props => props.fontFamily};
-  font-size: ${props => props.fontSize};
+  margin: 0px;
 
-  &:hover{
-    cursor: pointer;
+  img{
+    height: 150px;
+  }
+
+  h4{
+    font-family: 'Gotham Bold';
+    margin: 0 0 20px 0 ;
   }
 `
 
 export const Article = (
-  backgroundColor,
-  textColor,
+ { textColor,
   borderProperties,
   width,
   height,
-  fontFamily,
-  fontSize,
-  svg,
+  svgUrl,
   alt,
   title,
-  text,
+  text}
 ) => {
   return (
     <StyledArticle
-      background={backgroundColor}
       border={borderProperties}
       width={width}
       height={height}
-      color={textColor}
-      fontFamily={fontFamily}
-      fontSize={fontSize}>
-      {svg && <img src={svg} alt={alt} />}
-      {title && <h4>{title}</h4>}
-      {text && <p>{text}</p>}
+      color={textColor}>
+      <img src={illustration1} alt={alt}/>
+      <h4>{title}</h4>
+      <p>{text}</p>
     </StyledArticle>
   )
 }

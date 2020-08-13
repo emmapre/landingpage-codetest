@@ -10,6 +10,7 @@ const StyledHeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
   background-color: #2a2a2c;
   color: #fff;
   text-align: center;
@@ -45,16 +46,28 @@ const StyledH4 = styled.h4`
   margin: 10px 0 0 10px;
   font-size: 0.8em;
   font-weight: bold;
+  
   @media (min-width: 768px){
    margin: 20px;
     }
 `
+// const floating = keyframes`
+// 0% {
+//   bottom: 0px;
+// }
+// 50% {
+//   bottom: 15px;
+// }
+// 100% {
+//   bottom: 0px;
+// }`
 
 const StyledZeppeliner = styled(Zeppeliner)`
   fill: #fff;
   height: 250px;
   margin: -30px;
 `
+
 
 export const HeroSection = () => {
   return (
