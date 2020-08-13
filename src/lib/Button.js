@@ -4,17 +4,17 @@ import styled from 'styled-components/macro'
 const StyledButton = styled.button`
   min-width: 64px;
   min-height: 36px;
-  width: ${props => props.width};
-  height: ${props => props.height};
+  width: ${props => props.width || '250px'};
+  height: ${props => props.height || '70px'};
   padding: 0 16px 0 16px;
   border-radius: 3px;
   background-color: ${props => props.background};
-  border: ${props => props.border};
+  border: none;
   color: 
     ${props => props.color || '#000'};
   margin: 20px;
-  font-family: ${props => props.fontFamily};
-  font-size: ${props => props.fontSize};
+  font-family: ${props => props.fontFamily || 'Gotham Bold'};
+  font-size: ${props => props.fontSize || '18px'};
 
   &:hover{
     cursor: pointer;
@@ -36,7 +36,8 @@ export const Button = ({
   width,
   height,
   fontFamily,
-  fontSize
+  fontSize,
+  type
 }) => {
   return (
 
@@ -49,12 +50,10 @@ export const Button = ({
       color={textColor}
       fontFamily={fontFamily}
       fontSize={fontSize}
+      type={type}
     >
-
-      {icon && <Icon>{icon}</Icon>
-      }
+      {icon && <Icon>{icon}</Icon>}
       {buttonText}
-
     </StyledButton >
   )
 }

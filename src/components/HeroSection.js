@@ -37,10 +37,9 @@ const StyledHeroSection = styled.section`
       width: 40%;
     }
   }
-
 `
 
-const StyledH4 = styled.h4`
+const StyledP = styled.p`
   display: flex;
   align-self: flex-start;
   margin: 10px 0 0 10px;
@@ -51,16 +50,6 @@ const StyledH4 = styled.h4`
    margin: 20px;
     }
 `
-// const floating = keyframes`
-// 0% {
-//   bottom: 0px;
-// }
-// 50% {
-//   bottom: 15px;
-// }
-// 100% {
-//   bottom: 0px;
-// }`
 
 const StyledZeppeliner = styled(Zeppeliner)`
   fill: #fff;
@@ -68,18 +57,16 @@ const StyledZeppeliner = styled(Zeppeliner)`
   margin: -30px;
 `
 
-
 export const HeroSection = () => {
   return (
     <StyledHeroSection>
-      <StyledH4>Lorem ipsum</StyledH4>
+      <StyledP>Lorem ipsum</StyledP>
       <StyledZeppeliner />
       <div className='text-container'>
-      <h1>Digital Transformation</h1>
-      <h2>Rådgivning. Implementering. Resultat.</h2>
-      <p>Hvordan bliver din virksomhed en digital vinder i fremtiden? Hvilke tiltag skal det til strategisk och taktisk for at dreje forretningen i den rigtige retning? Hvilke elementer indeholder en succesfuld digital transformation? Vi har svarene. Pentia kan hjælpe dig på hele rejsen fram strategisk rådgivning till implementering.</p>
+        <h1>Digital Transformation</h1>
+        <h2>Rådgivning. Implementering. Resultat.</h2>
+        <p>Hvordan bliver din virksomhed en digital vinder i fremtiden? Hvilke tiltag skal det til strategisk och taktisk for at dreje forretningen i den rigtige retning? Hvilke elementer indeholder en succesfuld digital transformation? Vi har svarene. Pentia kan hjælpe dig på hele rejsen fram strategisk rådgivning till implementering.</p>
       </div>
-
       <Link smooth={true} to='infoSection'>
       <p>Start din rejse her</p>
       <Dots/>

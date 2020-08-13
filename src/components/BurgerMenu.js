@@ -39,7 +39,6 @@ const StyledMenu = styled.nav`
     }
   }
 `
-
 export const BurgerMenu = ({ open }) => {
   return (
     <StyledMenu open={open}>

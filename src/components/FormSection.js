@@ -1,24 +1,36 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import { Form } from '../components/Form'
 
+import { ReactComponent as Prize } from '../assets/prize.svg'
 
 const StyledFormSection = styled.section`
-background-color: #eb5b51;
-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 50px 0;
+  background-color: #eb5b51;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: 768px){
+  }
 `
-//röd färg eb5b51
+
+const StyledPrize = styled(Prize)`
+  fill: #fff;
+  height: 70px;
+`
 
 export const FormSection = () => {
   return (
     <StyledFormSection>
       <h2>Få 10 gode råd om digital transformation</h2>
-      <h3>Ja tak, jeg vil gerne höre mere om digital transformation</h3>
-
-      {/* FORM KMMER HÄR */}
-      {/* Button component komme rhär */}
-
-      {/* Form Navn, Mobil, e-mail, postnr., by */}
-      {/* knapp - ring mig op */}
+      <h4>Ja tak, jeg vil gerne höre mere om digital transformation</h4>
+      <Form/>
+      <StyledPrize/>
+      <h4>Pentia vinner pris for digital innovation 2017</h4>
     </StyledFormSection>
   )
 }

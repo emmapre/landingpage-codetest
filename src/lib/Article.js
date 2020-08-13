@@ -10,8 +10,7 @@ const StyledArticle = styled.article`
   padding: 0 16px 0 16px;
   margin: 0;
   border: ${props => props.border || 'none'};
-  color: 
-    ${props => props.color || '#000'};
+  color: ${props => props.color || '#000'};
   margin: 0px;
 
   img{
@@ -24,16 +23,15 @@ const StyledArticle = styled.article`
   }
 `
 
-export const Article = (
- { textColor,
+export const Article = ({ 
+  textColor,
   borderProperties,
   width,
   height,
-  svgUrl,
   alt,
   title,
-  text}
-) => {
+  text
+}) => {
   return (
     <StyledArticle
       border={borderProperties}
