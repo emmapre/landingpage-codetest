@@ -21,6 +21,7 @@ const StyledForm = styled.form`
 
 const handleSubmit = event => {
   event.preventDefault()
+  alert('Vi ringer snart!')
 }
 
 return (

@@ -10,7 +10,7 @@ const StyledHeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 90%;
   background-color: #2a2a2c;
   color: #fff;
   text-align: center;
@@ -29,14 +29,23 @@ const StyledHeroSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 80%;
+    height: 100%;
   }
 
   @media (min-width: 768px){
+    height: 100vh;
     .text-container {
       width: 40%;
     }
   }
+`
+
+const StyledZeppeliner = styled(Zeppeliner)`
+  fill: #fff;
+  height: 250px;
+  margin: -30px;
 `
 
 const StyledP = styled.p`
@@ -51,26 +60,26 @@ const StyledP = styled.p`
     }
 `
 
-const StyledZeppeliner = styled(Zeppeliner)`
-  fill: #fff;
-  height: 250px;
-  margin: -30px;
+const ScrollDiv = styled.div`
+  cursor: pointer;
 `
 
 export const HeroSection = () => {
   return (
     <StyledHeroSection>
       <StyledP>Lorem ipsum</StyledP>
-      <StyledZeppeliner />
       <div className='text-container'>
+        <StyledZeppeliner />
         <h1>Digital Transformation</h1>
         <h2>Rådgivning. Implementering. Resultat.</h2>
         <p>Hvordan bliver din virksomhed en digital vinder i fremtiden? Hvilke tiltag skal det til strategisk och taktisk for at dreje forretningen i den rigtige retning? Hvilke elementer indeholder en succesfuld digital transformation? Vi har svarene. Pentia kan hjælpe dig på hele rejsen fram strategisk rådgivning till implementering.</p>
       </div>
-      <Link smooth={true} to='infoSection'>
-      <p>Start din rejse her</p>
-      <Dots/>
-      </Link>
+      <ScrollDiv>
+        <Link smooth={true} to='infoSection'>
+          <p>Start din rejse her</p>
+          <Dots/>
+        </Link>
+      </ScrollDiv>
     </StyledHeroSection>
   )
 }

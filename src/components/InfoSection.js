@@ -7,7 +7,7 @@ const StyledInfoSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0 50px 0;
+  padding: 4rem 0 4rem 0;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -17,11 +17,12 @@ const StyledInfoSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 0 0 0;
+    margin: 5rem 0 0 0;
   }
 
   @media (min-width: 768px){
-    
+    height: 100vh;
+    justify-content: center;
     h2{
       width: 50%;
     }
@@ -31,8 +32,9 @@ const StyledInfoSection = styled.section`
     align-items: stretch;
     flex-direction: row;
     width: 60%;
+    max-width: 800px;
+    }
   }
-}
 `
 
 export const InfoSection = () => {
