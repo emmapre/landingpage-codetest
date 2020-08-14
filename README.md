@@ -1,4 +1,4 @@
-##Code test
+# Code test
 
 The styling is made with styled components.
 The layout is mostly flexbox with a flex-grid for the desktop menu. 
