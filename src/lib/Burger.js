@@ -16,6 +16,7 @@ const StyledBurger = styled.button`
   &:focus {
     outline: none;
   }
+  
   span {
     width: 2.5rem;
     height: 0.25rem;

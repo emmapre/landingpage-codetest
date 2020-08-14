@@ -21,12 +21,10 @@ const DotContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 10px 0;
   height: 30px;
   animation-name: ${floating};
   animation-duration: 3s;
   animation-iteration-count: infinite;
-
 `
 const TopDot = styled.span`
   height: 5px;
@@ -48,13 +46,11 @@ const BottomDot = styled.span`
 `
 
 export const Dots = () => {
-
-return(
-
-<DotContainer>
-<TopDot/>
-<MiddleDot/>
-<BottomDot/>
-</DotContainer>
-
-)}
+  return (
+    <DotContainer>
+      <TopDot/>
+      <MiddleDot/>
+      <BottomDot/>
+    </DotContainer>
+  )
+}

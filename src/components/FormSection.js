@@ -8,14 +8,13 @@ const StyledFormSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 50px 0 50px 0;
   background-color: #eb5b51;
   color: #fff;
   text-align: center;
   width: 100%;
-
-  @media (min-width: 768px){
-  }
+  min-height: 70vh;
 `
 
 const StyledPrize = styled(Prize)`

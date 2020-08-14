@@ -32,12 +32,14 @@ export const Article = ({
   title,
   text
 }) => {
+  
   return (
     <StyledArticle
       border={borderProperties}
       width={width}
       height={height}
-      color={textColor}>
+      color={textColor}
+      >
       <img src={illustration1} alt={alt}/>
       <h4>{title}</h4>
       <p>{text}</p>

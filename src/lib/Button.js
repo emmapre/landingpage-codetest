@@ -7,12 +7,13 @@ const StyledButton = styled.button`
   width: ${props => props.width || '250px'};
   height: ${props => props.height || '70px'};
   padding: 0 16px 0 16px;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: ${props => props.background};
   border: none;
   color: 
     ${props => props.color || '#000'};
   margin: 20px;
+  margin-top: 3rem;
   font-family: ${props => props.fontFamily || 'Gotham Bold'};
   font-size: ${props => props.fontSize || '18px'};
 

@@ -14,7 +14,7 @@ const StyledNavbar = styled.nav`
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  height: 70px;
+  height: 10vh;
   background-color: #1b1b1d;
 
   @media (min-width: 768px){
@@ -27,7 +27,7 @@ const StyledNavbar = styled.nav`
 `
 
 const BurgerContainer = styled.div`
-  margin: 0 10px 0 0;
+  margin: 0 1rem 0 0;
 
   @media (min-width: 768px){
     grid-row: 2/3;
@@ -37,7 +37,7 @@ const BurgerContainer = styled.div`
   }
 `
 const StyledPentiaLogo = styled(PentiaLogo)`
-  margin: 0 0 0 10px;
+  margin: 0 0 0 1rem;
   height: 35px;
   fill: #fff;
 

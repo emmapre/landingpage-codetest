@@ -7,7 +7,7 @@ const StyledInfoSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0 4rem 0;
+  padding: 5rem 0 4rem 0;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -21,11 +21,13 @@ const StyledInfoSection = styled.section`
   }
 
   @media (min-width: 768px){
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
-    h2{
+
+    h2 {
       width: 50%;
     }
+
     .articles-wrapper{
     display: flex;
     justify-content: space-between;

@@ -10,7 +10,8 @@ const StyledHeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90%;
+  justify-content: space-between;
+  height: 90vh;
   background-color: #2a2a2c;
   color: #fff;
   text-align: center;
@@ -31,7 +32,7 @@ const StyledHeroSection = styled.section`
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 100%;
+    height: 80%;
   }
 
   @media (min-width: 768px){
@@ -45,13 +46,12 @@ const StyledHeroSection = styled.section`
 const StyledZeppeliner = styled(Zeppeliner)`
   fill: #fff;
   height: 250px;
-  margin: -30px;
 `
 
 const StyledP = styled.p`
   display: flex;
   align-self: flex-start;
-  margin: 10px 0 0 10px;
+  padding: 10px 0 0 10px;
   font-size: 0.8em;
   font-weight: bold;
   
@@ -61,7 +61,12 @@ const StyledP = styled.p`
 `
 
 const ScrollDiv = styled.div`
+  margin: 0 0 1rem 0;
   cursor: pointer;
+  p {
+     margin: 0 0 0.2rem 0;
+     font-family: 'Gotham Bold';
+   }
 `
 
 export const HeroSection = () => {
