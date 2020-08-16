@@ -6,7 +6,6 @@ import { Article } from '../lib/Article'
 import illustration1 from '../assets/illustration1.svg'
 import illustration2 from '../assets/illustration2.svg'
 
-
 const StyledInfoSection = styled.section`
   display: flex;
   flex-direction: column;

@@ -2,12 +2,10 @@ import React from 'react'
 import GlobalStyle from './theme/globalStyle';
 import styled from 'styled-components/macro'
 
-
 import { Menu } from './components/Menu'
 import { HeroSection } from './components/HeroSection'
 import { InfoSection } from './components/InfoSection'
 import { FormSection } from './components/FormSection'
-
 
 const Container = styled.div`
   display: flex;
@@ -22,7 +20,6 @@ const Container = styled.div`
     margin:0 0 0 70px;
   } }
 `
-
 
 export const App = () => {
   return (

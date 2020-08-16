@@ -31,7 +31,6 @@ export const Article = ({
   alt,
   title,
   text,
-  illustration,
   imgsrc
 }) => {
 
