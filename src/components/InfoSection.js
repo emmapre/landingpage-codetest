@@ -3,6 +3,10 @@ import styled from 'styled-components/macro'
 
 import { Article } from '../lib/Article'
 
+import illustration1 from '../assets/illustration1.svg'
+import illustration2 from '../assets/illustration2.svg'
+
+
 const StyledInfoSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -44,13 +48,16 @@ export const InfoSection = () => {
     <StyledInfoSection id='infoSection'>
       <h2>Vi kan hjælpe dig med digital transformation på to fronter.</h2>
       <div className='articles-wrapper'>
+
         <Article
           alt='person with charts'
+          imgsrc={illustration1}
           title='Strategisk rådgivning om digital transformation'
           text='Udnytter din virksomhed sit digitale potentiale? Hvilke forretningsmuligheder er der, og hvad betyder det på et strategisk plan?'
         />
         <Article
           alt='board with chart'
+          imgsrc={illustration2}
           title='Eksekvering af digital transformation'
           text='I ved, hvad I vil, men I har brug for hjael til at rulle strategien ud i forhold til organisationen og det digitale fundament bl.a på Sitecore. Det handler om mennesker och resultater.'
         />

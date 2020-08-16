@@ -12,6 +12,7 @@ import { FormSection } from './components/FormSection'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+
   main {
     margin:70px 0 0 0;
   }
@@ -30,9 +31,9 @@ export const App = () => {
       <Container>
         <Menu />
         <main>
-        <HeroSection />
-        <InfoSection />
-        <FormSection />
+          <HeroSection />
+          <InfoSection />
+          <FormSection />
         </main>
       </Container>
     </div>

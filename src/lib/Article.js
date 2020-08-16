@@ -23,24 +23,26 @@ const StyledArticle = styled.article`
   }
 `
 
-export const Article = ({ 
+export const Article = ({
   textColor,
   borderProperties,
   width,
   height,
   alt,
   title,
-  text
+  text,
+  illustration,
+  imgsrc
 }) => {
-  
+
   return (
     <StyledArticle
       border={borderProperties}
       width={width}
       height={height}
       color={textColor}
-      >
-      <img src={illustration1} alt={alt}/>
+    >
+      <img src={imgsrc} alt={alt} />
       <h4>{title}</h4>
       <p>{text}</p>
     </StyledArticle>
